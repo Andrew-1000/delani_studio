@@ -7,6 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   justify-content: center;
+  animation-delay: 1.2s;
 }
 .footerhome {
   padding-top: 150px;
