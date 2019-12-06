@@ -17,17 +17,28 @@
   text-align: center;
   align-content: center;
   align-items: center;
+  padding: 150px 0px 150px 0px;
+  
+
 }
 
 .services {
   background-image: url("../img/s_image.jpg");
+  
+  padding: 100px 0px 100px 0px;
+  background-repeat: no-repeat;
   text-align: center;
   align-content: center;
   align-items: center;
+  
 }
 
 .whatwedo {
-  background-color: white;
+  background-color: rgba(246, 246, 246, 0.952);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  padding: 150px 0px 150px 0px;
 }
 .portfolio {
   background-color: white;
