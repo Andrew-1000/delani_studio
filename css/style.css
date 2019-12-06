@@ -1,0 +1,26 @@
+.home {
+  background-image: url("../img/h_img.jpg");
+}
+
+.about {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.services {
+  background-image: url("../img/s_image.jpg");
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+.whatwedo {
+  background-color: white;
+}
+.portfolio {
+  background-color: white;
+}
+.contactus {
+  background-image: url("../img/c_image.jpg");
+}
