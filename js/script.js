@@ -7,4 +7,12 @@ $(document).ready (function(){
     $(".toggleDesignLogo").hide();
     $("#Design").show();
   });
+  $("#devLogo").click(function(){
+    $("#Develop").hide();
+    $(".toggleDevLogo").show();
+  });
+  $(".toggleDevLogo").click(function(){
+    $(".toggleDevLogo").hide();
+    $("#Develop").show();
+  })
 });
