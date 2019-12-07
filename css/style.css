@@ -11,12 +11,14 @@
   position: relative;
   padding-top: 10%;
   font-weight: bold;
+  color: white;
 }
 
 .paragraph1 {
   font-weight: bold;
-  font-family: Signika Negative, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
+  color: white;
 }
 
 .row3 {
@@ -186,7 +188,13 @@ footer {
 
 h1 {
   font-weight: bold;
-  font-family: Signika Negative, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.para{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+    
 }
 
 .submit {
