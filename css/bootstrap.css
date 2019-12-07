@@ -251,6 +251,7 @@ textarea {
 button,
 input {
   overflow: visible;
+  
 }
 
 button,
@@ -1867,11 +1868,11 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.096);
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border-radius: 0.05rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -1964,7 +1965,7 @@ select.form-control:focus::-ms-value {
   padding-bottom: 0.375rem;
   margin-bottom: 0;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
@@ -2001,6 +2002,7 @@ textarea.form-control {
 
 .form-group {
   margin-bottom: 1rem;
+  
 }
 
 .form-text {
