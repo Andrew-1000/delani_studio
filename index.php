@@ -1,3 +1,8 @@
+<?php
+session_start();
+$statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+unset($_SESSION['msg']);
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -11,6 +16,7 @@
 </head>
 
 <body>
+    <?php echo $statusMsg;?>
   <div class="headerMain">
     <div class="container">
       <div class="jumbotron" style="background-image: url(img/h_img.jpg)" class="img-fluid">
@@ -153,7 +159,7 @@
     <div class="container">
       <div class="row7" style="background-image: url(img/c_img.jpg)">
         <h1>CONTACT US</h1>
-        <form method="POST" id="subscribeForm">
+        <form method="POST" action="function.php" id="subscribeForm">
           <div class="form-row">
             <div class="form-group col-md-6">
               <input type="text" name = "name" class="form-control" id="nameInput" placeholder="Name..." Required>
@@ -166,7 +172,7 @@
             </div>
           </div>
           <div class="form-group">
-            <input type="button" value="Submit" class="btn-primary">
+            <input type="button" value="Submit" name="submit" class="btn-primary">
           </div>
           
         </form>
