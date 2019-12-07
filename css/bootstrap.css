@@ -199,7 +199,7 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
-
+  
 }
 
 svg {
@@ -554,7 +554,6 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   background-color: #17a3b800;
-  
 }
 
 @media (min-width: 576px) {
