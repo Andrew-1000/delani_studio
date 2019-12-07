@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
   $message = $_POST['message'];
   if(!empty($email) && !filter_var($email, FILTER_VALIDATE_EMAIL) === false){
     //Providing API Credentials
-    $apiKey = 'e608817098f3dc675bd2cac03ae0f410-us4';
+    $apiKey = '4dd851a3205a768b1ac0f2664215ddf1-us4';
     $listID = 'd737bb660e';
 
     //MailChimp API URL providing
@@ -19,7 +19,8 @@ if(isset($_POST['submit'])){
     $json = json_encode([
       'email_address' => $email,
       'status'        => 'subscribed',
-      'names'         => $names
+      'names'         => $names,
+      'message'       => $message
     ]);
 
     //Sending a HTTP Request to POST with curl
@@ -43,9 +44,9 @@ if(isset($_POST['submit'])){
       switch ($httpCode) {
 
         //Incase one has already subscribed to the platform
-        case 214:
-          $msg = 'You are already subscribed';
-          break;
+        // case 214:
+        //   $msg = 'You are already subscribed';
+        //   break;
         default:
           $msg = 'Some problem occurred, please try again';
           break;

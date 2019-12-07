@@ -16,7 +16,7 @@ unset($_SESSION['msg']);
 </head>
 
 <body>
-    <?php echo $statusMsg;?>
+    
   <div class="headerMain">
     <div class="container">
       <div class="jumbotron" style="background-image: url(img/h_img.jpg)" class="img-fluid">
@@ -159,7 +159,8 @@ unset($_SESSION['msg']);
     <div class="container">
       <div class="row7" style="background-image: url(img/c_img.jpg)">
         <h1>CONTACT US</h1>
-        <form method="POST" action="function.php" id="subscribeForm">
+        <?php echo $statusMsg;?>
+        <form method="POST" action="function.php" id="mailchimp">
           <div class="form-row">
             <div class="form-group col-md-6">
               <input type="text" name = "name" class="form-control" id="nameInput" placeholder="Name..." Required>
