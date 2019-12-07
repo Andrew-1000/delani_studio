@@ -101,4 +101,10 @@ input, select, textarea{
 .social {
   text-align: center;
   background: #fff;
+  padding: 50px 0px 50px 0px;
+}
+.delfooter {
+  font-size: 10px;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.061);
 }

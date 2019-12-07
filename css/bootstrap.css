@@ -4628,6 +4628,8 @@ input[type="button"].btn-block {
   padding: 0.75rem 1.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+  font-size: 10px;
 }
 
 .card-footer:last-child {
