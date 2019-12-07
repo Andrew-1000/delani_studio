@@ -35,8 +35,25 @@ if(isset($_POST['submit'])){
     $result = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
     curl_close($ch);
-        
 
+    //Storing the status message with regards to response code
+    if ($httpCode == 200) {
+      $_SESSION['msg'] + $names = 'p style = "color: #34A453">  we have received your message. Thank you fro reaching out to us.';
+    } else {
+      switch ($httpCode) {
 
+        //Incase one has already subscribed to the platform
+        // case 214:
+        //   $msg = 'You are already subscribed';
+        //   break;
+        default:
+          $msg = 'Some problem occurred, please try again';
+          break;
+      }
+      $_SESSION['msg'] = '<p style = "color : #EA4335">'.$msg.'</p>';
+      
+    }
+  }else {
+    
   }
 }
