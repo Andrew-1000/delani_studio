@@ -1,6 +1,6 @@
 <?php
 session_start();
-$statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+$statusMsg = !empty($_SESSION['msg']) ? $_SESSION['msg'] : 'Welcome to Delani Studio';
 unset($_SESSION['msg']);
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ unset($_SESSION['msg']);
 </head>
 
 <body>
-    
+  <?php echo "<script language= 'JavaScript'>alert('$statusMsg');</script>"; ?>
   <div class="headerMain">
     <div class="container">
       <div class="jumbotron" style="background-image: url(img/h_img.jpg)" class="img-fluid">
@@ -88,70 +88,70 @@ unset($_SESSION['msg']);
       <div class="row5">
         <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="hvrbox">
-              <img src="img/work1.jpg" class="hvrbox-layer_bottom">
-              <div class="hvrbox-layer_top hvrbox-layer_scale">
-                <div class="hvrbox-text">Website to connect programmers</div>
-              </div>
+            <img src="img/work1.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text">Website to connect programmers</div>
+            </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12">
           <div class="hvrbox">
             <img src="img/work2.jpg" class="hvrbox-layer_bottom">
             <div class="hvrbox-layer_top hvrbox-layer_scale">
-                <div class="hvrbox-text"> Website for animations</div>
+              <div class="hvrbox-text"> Website for animations</div>
             </div>
           </div>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="hvrbox">
-              <img src="img/work3.jpg" class="hvrbox-layer_bottom">
-              <div class="hvrbox-layer_top hvrbox-layer_scale">
-                  <div class="hvrbox-text"> Security guard company</div>
-              </div>
+          <div class="hvrbox">
+            <img src="img/work3.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text"> Security guard company</div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-12">
-              <div class="hvrbox">
-                <img src="img/work4.jpg" class="hvrbox-layer_bottom">
-                <div class="hvrbox-layer_top hvrbox-layer_scale">
-                    <div class="hvrbox-text"> Stalled project</div>
-                </div>
-              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="hvrbox">
+            <img src="img/work4.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text"> Stalled project</div>
             </div>
+          </div>
+        </div>
       </div>
       <div class="row5">
-          <div class="col-lg-3 col-md-3 col-sm-12">
-              <div class="hvrbox">
-                <img src="img/work5.jpg" class="hvrbox-layer_bottom">
-                <div class="hvrbox-layer_top hvrbox-layer_scale">
-                    <div class="hvrbox-text"> Social Networking Website</div>
-                </div>
-              </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="hvrbox">
+            <img src="img/work5.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text"> Social Networking Website</div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="hvrbox">
-                  <img src="img/work6.jpg" class="hvrbox-layer_bottom">
-                  <div class="hvrbox-layer_top hvrbox-layer_scale">
-                      <div class="hvrbox-text"> Media Production website</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12">
-                  <div class="hvrbox">
-                    <img src="img/work7.jpg" class="hvrbox-layer_bottom">
-                    <div class="hvrbox-layer_top hvrbox-layer_scale">
-                        <div class="hvrbox-text"> Site for carpenters on there products</div>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="hvrbox">
-                      <img src="img/work8.jpg" class="hvrbox-layer_bottom">
-                      <div class="hvrbox-layer_top hvrbox-layer_scale">
-                          <div class="hvrbox-text"> Restaurant website</div>
-                      </div>
-                    </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="hvrbox">
+            <img src="img/work6.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text"> Media Production website</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="hvrbox">
+            <img src="img/work7.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text"> Site for carpenters on there products</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12">
+          <div class="hvrbox">
+            <img src="img/work8.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_scale">
+              <div class="hvrbox-text"> Restaurant website</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -159,25 +159,25 @@ unset($_SESSION['msg']);
     <div class="container">
       <div class="row7" style="background-image: url(img/c_img.jpg)">
         <h1>CONTACT US</h1>
-        <?php echo $statusMsg;?>
-        <form method="POST" action="function.php" id="mailchimp">
+
+        <form action="function.php" method="POST" id="mailchimp">
           <div class="form-row">
             <div class="form-group col-md-6">
-              <input type="text" name = "name" class="form-control" id="nameInput" placeholder="Name..." Required>
+              <input type="text" name="name" class="form-control" id="nameInput" placeholder="Name..." Required>
             </div>
             <div class="form-group col-md-6">
-              <input type="email" name = "email" class="form-control" id="exampleFormControlInput1" placeholder="Email..." Required>
+              <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Email..." Required>
             </div>
             <div class="form-group">
               <textarea class="form-control form-control-lg" id="messageInput" name="message" rows="5" cols="100" placeholder="Your message here..." Required></textarea>
             </div>
           </div>
           <div class="form-group">
-            <input type="button" value="Submit" name="submit" class="btn-primary">
+            <input type="button" value="Submit" name="submit" class=" btn btn-primary">
           </div>
-          
+
         </form>
-       
+
       </div>
     </div>
   </div>

@@ -39,7 +39,7 @@ if(isset($_POST['submit'])){
 
     //Storing the status message with regards to response code
     if ($httpCode == 200) {
-      $_SESSION['msg'] = 'p style = "color: #34A453">  We have received your message. Thank you fro reaching out to us.';
+      $_SESSION['msg'] = 'We have received your message. Thank you for reaching out to us.';
     } else {
       switch ($httpCode) {
 
