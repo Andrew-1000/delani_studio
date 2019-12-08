@@ -61,4 +61,4 @@ if(isset($_POST['submit'])){
 }
 
 //After all execution, redirect to homepage
-header("location:index.php");
+header("location:index.html");
