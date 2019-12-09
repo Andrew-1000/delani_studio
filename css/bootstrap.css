@@ -549,9 +549,9 @@ pre code {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
+  padding-right: 1px;
+  padding-left: 1px;
+  margin-right: auto; 
   margin-left: auto;
   background-color: #17a3b800;
 }
@@ -5104,9 +5104,13 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
+  padding: 45px 0px 45px 0px;
   border-radius: 0;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/h_img.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
 }
 
 .alert {

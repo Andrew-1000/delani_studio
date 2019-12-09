@@ -4,7 +4,7 @@ var submission = function(){
   var name = document.getElementById("name").value;
   var message = document.getElementById("message").value;
   if (email == "" || name == "") {
-    alert ("")
+    alert ("Kindly fill the form below")
   }
   else {
     alert ('Hello ' +name +  ' We have received your message. Thank you for reaching out to us. ')
