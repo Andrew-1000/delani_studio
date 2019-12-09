@@ -9,7 +9,7 @@ unset($_SESSION['msg']);
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -18,10 +18,10 @@ unset($_SESSION['msg']);
 
 <body>
   <!-- <?php echo "<script language= 'JavaScript'>alert('$statusMsg');</script>"; ?> -->
- 
+
   <div class="headerMain">
     <div class="container">
-      <div class="jumbotron-fluid" style="background-image: url(img/h_img.jpg)" class="img-fluid" >
+      <div class="jumbotron-fluid" style="background-image: url(img/h_img.jpg)" class="img-fluid">
         <div class="row1">
           <img id="headerImg1" src="img/logo.png" alt="Delani_logo">
           <h1 class="paragraph1">WELCOME</h1>
@@ -36,9 +36,12 @@ unset($_SESSION['msg']);
     <div class="container">
       <div class="row">
         <h1 class="h1whitebg">ABOUT US</h1>
-        <p class="paragraph2">When you work with us you are part of a team of committed collaboratos. All aspects of our software development process are intergrated, iknteractive <br>and agile</p>
-        <p class="paragraph2">Our approach unifies design, development and product management to create exceptional products.</p>
-        <p class="paragraph2">We start each project by understanding your business goals, the user's needs and the product requiremnets </p>
+        <p class="paragraph2">When you work with us you are part of a team of committed collaboratos. All aspects of our
+          software development process are intergrated, iknteractive <br>and agile</p>
+        <p class="paragraph2">Our approach unifies design, development and product management to create exceptional
+          products.</p>
+        <p class="paragraph2">We start each project by understanding your business goals, the user's needs and the
+          product requiremnets </p>
         <p class="paragraph2">Then we help translate them into effective and elegant solutions.</p>
       </div>
     </div>
@@ -47,7 +50,8 @@ unset($_SESSION['msg']);
     <div class="container">
       <div class="row3" style="background-image: url( img/s_img.jpg)">
         <h1 class="paragraph1">SERVICES</h1>
-        <p class=" para">Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision</p>
+        <p class=" para">Before we sign a contract or write a line of code our team will spend the necessary time needed
+          to understand your product vision</p>
         <p class="para">The outcome of this scoping session is a proposal or high-level statement of work</p>
         <p class="para">based on your requirments, we can provide a complete offering or just the pieces you need.</p>
       </div>
@@ -61,8 +65,10 @@ unset($_SESSION['msg']);
           <p id="Design"> <img id="designLgo" src="img/design_icon.png" class="img-fluid" alt="Dev_logo">DESIGN</p>
           <div class="toggleDesignLogo">
             <h1 class="h1whitebg">Design</h1>
-            <p>Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
-              Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed..</p>
+            <p>Our design practice offers a full range of services including brand strategy, interaction and visual
+              design and user experience testing.
+              Throughout your project, our designers create and implement visual design and workflows, solicit user
+              feedback and work with you to make sure what gets built is what is needed..</p>
           </div>
         </div>
         <br>
@@ -71,15 +77,19 @@ unset($_SESSION['msg']);
           <div class="toggleDevLogo">
             <h1 class="h1whitebg">Development</h1>
             <p>All engineers are fluent in the latest enterprise, mobile and web development technologies.
-              They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
-              </p>
+              They collaborate with your team to write, and improve code on a daily basis, using proven practices such
+              as test-driven development and pair programming.
+            </p>
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12">
-          <p id="Product"><img id="productLogo" src="img/product_icon.png" class="img-fluid " alt="Product_logo">PRODUCT MANAGEMENT</p>
+          <p id="Product"><img id="productLogo" src="img/product_icon.png" class="img-fluid " alt="Product_logo">PRODUCT
+            MANAGEMENT</p>
           <div class="toggleProductLogo">
             <h1 class="h1whitebg">Product Management</h1>
-            <p>Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve.</p>
+            <p>Planning and development is iterative. Because we are constantly coding and testing, the products we
+              build are always ready to go live. This iterative process allows for changes as business requirements
+              evolve.</p>
           </div>
         </div>
       </div>
@@ -163,24 +173,28 @@ unset($_SESSION['msg']);
       <div class="row7" style="background-image: url(img/c_img.jpg)">
         <h1 class="paragraph1">CONTACT US</h1>
 
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Name..." Required>
-            </div>
-            <div class="form-group col-md-6">
-              <input type="email" name="email" class="form-control" id="email" placeholder="Email..." Required>
+        <div id="contact">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Name..." Required>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" name="email" class="form-control" id="email" placeholder="Email..." Required>
+              </div>
+              <div class="form-group" id="text-area-contact">
+                <textarea class="form-control form-control-lg" id="message" name="message" rows="5" cols="100"
+                  placeholder="Your message here..." Required></textarea>
+              </div>
             </div>
             <div class="form-group">
-              <textarea class="form-control form-control-lg" id="message" name="message" rows="5" cols="100" placeholder="Your message here..." Required></textarea>
+              <!-- <input type="submit" onclick = "submission()" name="submit" class=" btn btn-primary"> -->
+              <input type="submit" class="btn btn-primary" onclick=submission() value="submit">
             </div>
-          </div>
-          <div class="form-group">
-            <!-- <input type="submit" onclick = "submission()" name="submit" class=" btn btn-primary"> -->
-            <input type="submit" class="btn btn-primary" onclick = submission() value="submit">
-          </div>
 
-        </form>
+          </form>
+        </div>
+
 
       </div>
     </div>
@@ -201,10 +215,12 @@ unset($_SESSION['msg']);
       <p class="paragraph2">DELANI STUDIO <br>2019</p>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
   <script src="js/script.js" type="text/javascript"></script>
 </body>
 
