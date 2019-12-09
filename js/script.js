@@ -1,3 +1,17 @@
+//Shows an alertbox at the top
+var submission = function(){
+  var email = document.getElementById("email").value;
+  var name = document.getElementById("name").value;
+  var message = document.getElementById("message").value;
+  if (email == "" || name == "") {
+    alert ("")
+  }
+  else {
+    alert ('Hello ' +name +  ' We have received your message. Thank you for reaching out to us. ')
+  }
+}
+
+//jQuery Code starts here
 $(document).ready (function(){
   $("#designLgo").click(function(){
     $("#Design").hide();
@@ -40,6 +54,7 @@ $(document).ready (function(){
     });
   });
 
+
   $(function($){
     $('#mailchimp').submit(function(){
       var mailchimpform = $(this);
@@ -54,5 +69,4 @@ $(document).ready (function(){
       return false;
     });
   });
-  
 });
