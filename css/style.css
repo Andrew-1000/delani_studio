@@ -15,15 +15,15 @@
 
 .paragraph1 {
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 50px;
   color: white;
 }
 
 .row3 {
   width: 100%;
   height: 300px;
-  padding: 0px 20px;
+  padding: 0px 20px 0px 20px;
   margin-right: -15px;
   margin-left: -15px;
   text-align: center;
@@ -31,7 +31,7 @@
 }
 
 .row3 h1 {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .row4 {
@@ -74,7 +74,7 @@
 
 .row7 {
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin-right: 15px;
   margin-left: 15px;
   padding: 0px 20px 0px 20px;
@@ -93,11 +93,7 @@
   position: relative;
 }
 
-.whatWeDo h1 {
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
+
 ::placeholder { 
   color: white;
   
@@ -139,7 +135,7 @@
 }
 
 footer {
-  height: 250px;
+  height: 150px;
   margin-top: 60px;
   width: 100%;
   text-align: center;
@@ -197,8 +193,11 @@ h1 {
 }
 .h1whitebg {
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Signika Negative', sans-serif;
   color: black;
+  font-size: 50px;
+  margin: 10px;
+  text-align: center;
 }
 .para{
   font-family: Arial, Helvetica, sans-serif;
